@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FaTwitter, FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa';
+import logoSvg from '../../assets/logo.svg';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -12,7 +13,7 @@ const Footer = () => {
                     <div className="flex items-center gap-2">
                         <div className="flex items-center gap-3">
                             <img
-                                src="/src/assets/logo.svg"
+                                src={logoSvg}
                                 alt="OSIG Logo"
                                 className="w-10 h-10"
                             />
