@@ -9,11 +9,13 @@ import Register from './page/Register/Register';
 import Imggen from './page/imggen/Imggen';
 import Settings from './page/Settings/Settings';
 import ForgotPassword from './page/forgot-password/ForgotPassword';
+import StructuredData from './components/StructuredData';
 
 function App() {
     return (
         <QueryClientProvider client={queryClient}>
             <AuthProvider>
+                <StructuredData />
                 <Routes>
                     {/* Routes with Layout (Navbar + Footer) */}
                     <Route path="/" element={<Layout><Home /></Layout>} />

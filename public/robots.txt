@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /settings/
+
+Sitemap: https://osig.vercel.app/sitemap.xml

@@ -1,9 +1,42 @@
 @import "tailwindcss";
-
 @layer base {
   html, body {
     overflow-x: hidden;
     width: 100%;
     position: relative;
   }
+}
+
+@layer utilities {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #7c3aed;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+  }
+
+  .skip-link:focus {
+    top: 0;
+  }
+}
+
+*:focus-visible {
+  outline: 2px solid #7c3aed;
+  outline-offset: 2px;
 }

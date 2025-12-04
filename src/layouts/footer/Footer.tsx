@@ -6,23 +6,22 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-gray-50 border-t border-gray-200 mt-auto">
+        <footer className="bg-gray-50 border-t border-gray-200 mt-auto" role="contentinfo">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-12">
-                    {/* Logo */}
                     <div className="flex items-center gap-2">
                         <div className="flex items-center gap-3">
                             <img
                                 src={logoSvg}
-                                alt="OSIG Logo"
+                                alt="OSIG Logo - AI Image Generator"
                                 className="w-10 h-10"
+                                loading="lazy"
                             />
                             <span className="text-2xl font-bold text-gray-900">OSIG</span>
                         </div>
                     </div>
 
-                    {/* Navigation Links */}
-                    <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4">
+                    <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4" aria-label="Footer navigation">
                         <Link to="/" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
                             Home
                         </Link>
