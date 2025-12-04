@@ -75,7 +75,7 @@ const Footer = () => {
                             href="https://instagram.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-10 h-10 bg-[#06b6d4] hover:bg-[#0891b2] rounded-full flex items-center justify-center text-white transition-colors"
+                            className="w-10 h-10 bg-[#067589] hover:bg-[#0891b2] rounded-full flex items-center justify-center text-white transition-colors"
                             aria-label="Instagram"
                         >
                             <FaInstagram className="w-5 h-5" />

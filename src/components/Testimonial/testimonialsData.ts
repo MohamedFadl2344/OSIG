@@ -14,7 +14,7 @@ export const testimonialsData: TestimonialData[] = [
     {
         role: "Product Designer",
         icon: FaUser,
-        iconBg: "#06b6d4",
+        iconBg: "#067589",
         rating: 5,
         text: "OSIG makes it easy to generate high-quality visuals without worrying about data storage or logs.",
         company: "OSIG"
@@ -30,7 +30,7 @@ export const testimonialsData: TestimonialData[] = [
     {
         role: "UX Researcher",
         icon: FaStar,
-        iconBg: "#06b6d4",
+        iconBg: "#067589",
         rating: 5,
         text: "A minimal and efficient experience. The encryption model gives total peace of mind.",
         company: "OSIG"
@@ -47,7 +47,7 @@ export const testimonialsData: TestimonialData[] = [
     {
         role: "UX Researcher",
         icon: FaStar,
-        iconBg: "#06b6d4",
+        iconBg: "#067589",
         rating: 5,
         text: "A minimal and efficient experience. The encryption model gives total peace of mind.",
         company: "OSIG"

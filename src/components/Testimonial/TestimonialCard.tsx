@@ -25,7 +25,7 @@ const TestimonialCard = ({ role, icon: IconComponent, iconBg, rating, text, comp
                     <h4 className="text-lg font-bold text-gray-900">{role}</h4>
                     <div className="flex gap-1 mt-1">
                         {[...Array(rating)].map((_, i) => (
-                            <BsStarFill key={i} className="w-4 h-4 text-[#06b6d4]" />
+                            <BsStarFill key={i} className="w-4 h-4 text-[#067589]" />
                         ))}
                     </div>
                 </div>
@@ -39,11 +39,11 @@ const TestimonialCard = ({ role, icon: IconComponent, iconBg, rating, text, comp
             {/* Footer */}
             <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                 <div className="flex gap-1">
-                    <div className="w-2 h-2 rounded-full bg-[#06b6d4]"></div>
+                    <div className="w-2 h-2 rounded-full bg-[#067589]"></div>
                     <div className="w-2 h-2 rounded-full bg-[#8b5cf6]"></div>
-                    <div className="w-2 h-2 rounded-full bg-[#06b6d4]"></div>
+                    <div className="w-2 h-2 rounded-full bg-[#067589]"></div>
                 </div>
-                <span className="text-sm font-semibold text-[#06b6d4]">{company}</span>
+                <span className="text-sm font-semibold text-[#067589]">{company}</span>
             </div>
         </div>
     );
