@@ -10,8 +10,7 @@ const PrivacyCard = () => {
                 Privacy & Security
             </h3>
             <p className="text-gray-600 leading-relaxed">
-                We do not store images, logs, or prompts. All API keys are encrypted with industry-grade AES-256 and decrypted only in memory during generation. Our system acts as a secure proxy between you and advanced AI models — ensuring speed, privacy, and complete transparency.
-            </p>
+                We don’t store images, prompts, or logs. All API keys are encrypted using industry-standard AES-256 and decrypted only in memory during generation. Our system functions as a secure proxy between you and leading AI models guaranteeing speed, full privacy, and complete transparency at every step.            </p>
         </div>
     );
 };

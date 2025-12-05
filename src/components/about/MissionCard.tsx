@@ -10,7 +10,7 @@ const MissionCard = () => {
                 Our Mission
             </h3>
             <p className="text-gray-600 leading-relaxed">
-                To democratize AI-powered creativity while maintaining the highest standards of user privacy and data security. We believe powerful tools shouldn't come at the cost of your personal information.
+                To empower everyone with AI-driven creativity while upholding the highest standards of privacy and data security. We believe powerful tools should never require sacrificing your personal information.
             </p>
         </div>
     );

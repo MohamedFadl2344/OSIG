@@ -12,7 +12,7 @@ const AboutHeader = () => {
                 About OSIG
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                OSIG is a privacy-focused AI image generation platform built with a simple mission: to give users powerful creative tools without compromising their security or data ownership.
+                OSIG is a privacy-first AI image generation platform for creators who value security. It delivers powerful, easy-to-use tools without ever compromising your data ownership or privacy.
             </p>
         </div>
     );
