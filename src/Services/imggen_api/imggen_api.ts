@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000/v1/chat/completions';
+const API_URL = 'https://openrouter-proxy-server-env.up.railway.app/v1/chat/completions';
 
 export interface ImageGenerationResponse {
     id: string;
