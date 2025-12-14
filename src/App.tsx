@@ -9,6 +9,7 @@ import Register from './page/Register/Register';
 import Imggen from './page/imggen/Imggen';
 import Settings from './page/Settings/Settings';
 import ForgotPassword from './page/forgot-password/ForgotPassword';
+import Contact from './page/contact/contact';
 import StructuredData from './components/StructuredData';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                     <Route path="/" element={<Layout><Home /></Layout>} />
                     <Route path="/generate" element={<Layout><Imggen /></Layout>} />
                     <Route path="/settings" element={<Layout><Settings /></Layout>} />
+                    <Route path="/contact" element={<Layout><Contact /></Layout>} />
 
                     {/* Routes without Layout (Auth Pages) */}
                     <Route path="/login" element={<Login />} />

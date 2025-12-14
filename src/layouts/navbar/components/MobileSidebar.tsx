@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../../../context/AuthContext';
 import Logo from './Logo';
 import Profiledrop from './Profiledrop';
@@ -10,12 +10,35 @@ interface MobileSidebarProps {
 
 const MobileSidebar = ({ isOpen, onClose }: MobileSidebarProps) => {
     const { user, loading } = useAuth();
+    const location = useLocation();
+
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+        if (location.pathname === '/') {
+            e.preventDefault();
+            onClose();
+            setTimeout(() => {
+                const element = document.getElementById(targetId);
+                if (element) {
+                    const offset = 80;
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 300);
+        } else {
+            onClose();
+        }
+    };
 
     const links = [
-        { to: '#home', label: 'Home' },
-        { to: '#about', label: 'About' },
-        { to: '#services', label: 'Services' },
-        { to: '#contact', label: 'Contact' }
+        { to: '/', label: 'Home', isRoute: true },
+        { to: '#about', label: 'About', isRoute: false, targetId: 'about' },
+        { to: '#services', label: 'Services', isRoute: false, targetId: 'services' },
+        { to: '/contact', label: 'Contact', isRoute: true }
     ];
 
     return (
@@ -61,14 +84,25 @@ const MobileSidebar = ({ isOpen, onClose }: MobileSidebarProps) => {
                 {/* Sidebar Navigation */}
                 <div className="flex flex-col p-6 space-y-2">
                     {links.map((link) => (
-                        <Link
-                            key={link.to}
-                            to={link.to}
-                            className="text-gray-700 hover:text-[#7c3aed] hover:bg-[#7c3aed]/5 transition-all text-lg font-medium py-4 px-4 rounded-xl"
-                            onClick={onClose}
-                        >
-                            {link.label}
-                        </Link>
+                        link.isRoute ? (
+                            <Link
+                                key={link.to}
+                                to={link.to}
+                                className="text-gray-700 hover:text-[#7c3aed] hover:bg-[#7c3aed]/5 transition-all text-lg font-medium py-4 px-4 rounded-xl"
+                                onClick={onClose}
+                            >
+                                {link.label}
+                            </Link>
+                        ) : (
+                            <a
+                                key={link.to}
+                                href={link.to}
+                                className="text-gray-700 hover:text-[#7c3aed] hover:bg-[#7c3aed]/5 transition-all text-lg font-medium py-4 px-4 rounded-xl cursor-pointer"
+                                onClick={(e) => handleScroll(e, link.targetId!)}
+                            >
+                                {link.label}
+                            </a>
+                        )
                     ))}
                 </div>
 
