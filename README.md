@@ -1,6 +1,18 @@
 # OSIG - Open Source Image Generator
 
-A modern, secure, and privacy-focused AI image generation platform built with React, TypeScript, and Vite.
+<div align="center">
+  <img src="./public/img_view/OSIG - AI Image Generation.webp" alt="OSIG Platform" width="100%" />
+  
+  <p align="center">
+    <strong>A modern, secure, and privacy-focused AI image generation platform</strong>
+  </p>
+  
+  <p align="center">
+    Built with React, TypeScript, and Vite
+  </p>
+</div>
+
+---
 
 ## Project Status
 
@@ -160,7 +172,27 @@ Reserved directories for advanced state management:
 - Secure HTTP headers
 - No server-side image storage
 
-## Performance Optimization
+## Performance Metrics
+
+OSIG achieves excellent performance scores across all key metrics:
+
+### Desktop Performance
+<img src="./public/img_view/Annotation 2025-12-14 162342.jpg" alt="Desktop Performance" width="800" />
+
+- **Performance**: 100/100
+- **Accessibility**: 87/100
+- **Best Practices**: 100/100
+- **SEO**: 83/100
+
+### Mobile Performance
+<img src="./public/img_view/Annotation 2025-12-14 162359.jpg" alt="Mobile Performance" width="800" />
+
+- **Performance**: 98/100
+- **Accessibility**: 87/100
+- **Best Practices**: 100/100
+- **SEO**: 83/100
+
+### Performance Optimization
 
 - Code splitting
 - Lazy loading
