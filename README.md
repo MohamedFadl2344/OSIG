@@ -3,13 +3,13 @@
 <div align="center">
   <img src="./public/img_view/OSIG - AI Image Generation.webp" alt="OSIG Platform" width="100%" />
   
-  <p align="center">
+  <!-- <p align="center">
     <strong>A modern, secure, and privacy-focused AI image generation platform</strong>
   </p>
   
   <p align="center">
     Built with React, TypeScript, and Vite
-  </p>
+  </p> -->
 </div>
 
 ---
@@ -180,17 +180,17 @@ OSIG achieves excellent performance scores across all key metrics:
 <img src="./public/img_view/Annotation 2025-12-14 162342.jpg" alt="Desktop Performance" width="800" />
 
 - **Performance**: 100/100
-- **Accessibility**: 87/100
+- **Accessibility**: 83/100
 - **Best Practices**: 100/100
-- **SEO**: 83/100
+- **SEO**: 100/100
 
 ### Mobile Performance
 <img src="./public/img_view/Annotation 2025-12-14 162359.jpg" alt="Mobile Performance" width="800" />
 
-- **Performance**: 98/100
-- **Accessibility**: 87/100
+- **Performance**: 100/100
+- **Accessibility**: 83/100
 - **Best Practices**: 100/100
-- **SEO**: 83/100
+- **SEO**: 100/100
 
 ### Performance Optimization
 
